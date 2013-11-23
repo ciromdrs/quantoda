@@ -6,41 +6,34 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="right"
         android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/jogar_bt"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:onClick="jogarClicado()"
-            android:text="Jogar" />
 
         <Button
             android:id="@+id/ranking_bt"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:onClick="jogarClicado()"
-            android:text="Ver Ranking" />
+            android:onClick="verPontuacoes"
+            android:text="@string/ver_pontuacoes" />
 
         <Button
             android:id="@+id/sair_bt"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:onClick="jogarClicado()"
-            android:text="Sair" />
+            android:onClick="sair"
+            android:text="@string/sair" />
     </LinearLayout>
 
-    <fragment
-        android:id="@+id/fragmento_grande"
-        android:name="com.example.quantoda.FragmentoGrande"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5" />
+    <FrameLayout
+        android:id="@+id/frame_grande"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <fragment
+	        android:id="@+id/fragmento_grande"
+	        android:name="com.example.quantoda.FragmentoGrande"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"/>
+    </FrameLayout>
 
 </LinearLayout>
