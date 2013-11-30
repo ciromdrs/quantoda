@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmento_pequeno"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
-
-    <fragment
-        android:id="@+id/fragmento_pequeno"
-        android:name="com.example.quantoda.FragmentoPequeno"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-</FrameLayout>
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal">
+    
+</LinearLayout>

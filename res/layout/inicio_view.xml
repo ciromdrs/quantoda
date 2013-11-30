@@ -2,28 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:gravity="center">
     
     <Button
         android:id="@+id/jogar_bt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:onClick="jogar"
-        android:text="@string/jogar" />
+        android:text="Jogar" />
 
     <Button
         android:id="@+id/ranking_bt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:onClick="verPontuacoes"
-        android:text="@string/ver_pontuacoes" />
+        android:layout_margin="5dp"
+        android:onClick="verRanking"
+        android:text="Ver Ranking" />
 
     <Button
         android:id="@+id/sair_bt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:onClick="sair"
-        android:text="@string/sair" />
-
+        android:text="Sair" />
+    
 </LinearLayout>

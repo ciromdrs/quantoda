@@ -2,14 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-    
-    <Button android:id="@+id/jogar_bt"
-        android:onClick="jogar"
-        android:text="@string/jogar"
+    android:orientation="horizontal" 
+    android:gravity="top|center_horizontal">
+
+    <Button
+        android:id="@+id/jogar_bt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="200dp"
-        android:layout_margin="30dp"/>
-    
+        android:onClick="jogar"
+        android:text="Jogar" />
+
+    <Button
+        android:id="@+id/ranking_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="verRanking"
+        android:text="Ver Ranking" />
+
+    <Button
+        android:id="@+id/sair_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sair"
+        android:text="Sair" />
+
 </LinearLayout>
