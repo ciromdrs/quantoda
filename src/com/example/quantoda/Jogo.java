@@ -8,8 +8,8 @@ import android.util.Log;
 public class Jogo {
 	private int nivel = 1;
 	private double resultado;
-	private int cedulas[] = {2, 5, 10, 20, 50, 100}; // a ordem dos valores pode interferir na dificuldade
-	private double moedas[] = {1, 0.50, 0.25, 0.10, 0.05}; // a ordem dos valores pode interferir na dificuldade
+	public static int cedulas[] = {2, 5, 10, 20, 50, 100}; // a ordem dos valores pode interferir na dificuldade
+	public static double moedas[] = {1, 0.50, 0.25, 0.10, 0.05}; // a ordem dos valores pode interferir na dificuldade
 	private Random rand = new Random();
 	
 	private String tag = "Jogo.java"; // tag para debug

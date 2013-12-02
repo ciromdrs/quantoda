@@ -4,5 +4,6 @@
     <string name="app_name">Quanto dá?</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="quanto_da">Quanto dá?</string>
 
 </resources>
